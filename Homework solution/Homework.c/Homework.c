@@ -39,7 +39,7 @@ int main()
             array[k] = '.';
             break;
         default:
-            printf("\n\n error \n\n");
+            printf("\n error \n");
             exit(-1);
         k = k++;
         }
