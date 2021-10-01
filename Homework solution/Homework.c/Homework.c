@@ -3,7 +3,8 @@
 
 int main()
 {
-    char num;
+    char num, array[64];
+    int k = 0;
     while (
         (num = getchar()) != EOF &&
         num != '\n' &&
@@ -11,6 +12,17 @@ int main()
     {
         switch (num)
         {
+        case '-':
+            if (k == 0)
+            {
+                array[k] = num;
+            }
+            else
+            {
+                printf("\n\n error \n\n");
+                exit(-1);
+            }
+            break;
         case '0':
         case '1':
         case '2':
@@ -21,16 +33,18 @@ int main()
         case '7':
         case '8':
         case '9':
-            printf("%c", num);
+            array[k] = num;
             break;
         case '|':
-            printf(".");
+            array[k] = '.';
             break;
         default:
             printf("\n\n error \n\n");
             exit(-1);
+        k = k++;
         }
     }
     printf("\n");
+    printf("%c", array[64]);
     exit(0);
 }
