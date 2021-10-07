@@ -41,10 +41,14 @@ int main()
         default:
             printf("\n error \n");
             exit(-1);
-        k = k++;
+            k = k++;
         }
     }
+    for (int i = 0; i <= 63; i++)
+    {
+        printf("%c", array[i]);
+    }
     printf("\n");
-    printf("%c", array[64]);
     exit(0);
 }
+
