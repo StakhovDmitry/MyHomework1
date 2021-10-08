@@ -1,11 +1,10 @@
 ﻿#include <stdio.h>
-
 #include <stdlib.h>
-
 #include <stdint.h>
 
 #define ARRAY_LEN 64
-int main() {
+
+int main(void) {
     char num, array[ARRAY_LEN];
     int k = 0;
     while (
